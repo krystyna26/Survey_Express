@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <div class='box'>
+                <div class='smallBox'>
+                    <div class="left">
+                        <h4>Your name:</h4>
+                        <h4>Dojo Location:</h4>
+                        <h4>Favorite Language:</h4>
+                        <h4>Comment (optional):</h4><br>
+                    </div>
+                    <div class="right">
+                        <form action='/process' method='post'>
+                            
+                            <input type='text' name='name'><br>
+                            <select id="state" class="select" name ='location'>
+                                <option value="San Jose">San Jose</option>
+                                <option value="Seatle">Seatle</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Dallas">Dallas</option>
+                            </select>
+                            <select name="language" id="language" name='language'>
+                                <option value="Python">Python</option>
+                                <option value="Java Script">Java Script</option>
+                                <option value="Java">Java</option>
+                                <option value="HTML">HTML</option>
+                            </select>
+                    </div>
+                </div>
+                <textarea id="resizable" placeholder="Message" name='comment' rows="5" cols="28" margin-left=5px padding="16"></textarea>
+                <input class="submit" type='submit' value='Submit'>
+            </form>
+        </div>
+    </body>
+</html>
